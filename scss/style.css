@@ -1,0 +1,88 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(180deg, #00bfe7, #100028);
+  color: white;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+header .container-fluid .row .col h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header .container-fluid .row .col a {
+  flex: 0;
+}
+
+main {
+  margin: 70px 0;
+  padding: 30px 0;
+  position: relative;
+}
+
+main .container .row .col-lg-4 .card {
+  border: none;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+main .container .row .col-lg-4 .card .demo-link {
+  color: black;
+  text-decoration: none;
+}
+
+main .container .row .col-lg-4 .card .card-img {
+  height: 450px;
+  overflow: hidden;
+}
+
+main .container .row .col-lg-4 .card .card-body {
+  text-align: center;
+}
+
+main .container .row .col-lg-4 .card:hover .demo-link {
+  text-decoration: underline !important;
+}
+
+main .container .row .col-lg-4 .card:hover .card-img img {
+  transition: all 3s ease-out;
+  transform: translateY(-500px);
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #100028;
+  top: 0;
+  height: 100%;
+  left: 49.9%;
+}
+
+footer {
+  background-color: #100028;
+  color: white;
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 30px 0;
+  }
+
+  main::after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
